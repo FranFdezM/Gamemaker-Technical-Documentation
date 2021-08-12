@@ -1,0 +1,275 @@
+* ,*::after, *::before{
+ box-sizing:border-box;
+}
+
+body {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 10px;
+    background: #222222;
+}
+
+nav header {
+    color: #45a146;
+    padding: 5px;
+    margin-bottom: 5px;
+    margin-top: 40px;
+    margin-left: 10px;
+    font-size: 15px;
+    border-bottom: 3px solid #ebebeb;
+}
+
+li {
+    list-style: none
+}
+
+nav ul {
+    border-bottom: 3px solid #45a146;
+    height: 80vh;
+    margin: 0;
+    padding: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+footer {
+    display: block;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin-top: 15%;
+    color: #ebebeb;
+    font-size: 12px;
+    background-color: #45a146;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+span {
+    padding: 5px;
+}
+
+i {
+    position: relative;
+    bottom: 2px;
+}
+
+main {
+    position: absolute;
+    left: 550px;
+    top: 50px;
+}
+
+h1 {
+    display: block;
+    color: #45a146;
+    padding: 2px 2px 2px 2px;
+    font-size: 20px;
+}
+
+p {
+    color: #111;
+    background: #ebebeb;
+    margin: 0 auto;
+    text-align: justify;
+    padding: 10px;
+    margin-right: 50px;
+    line-height: 1.5;
+}
+
+section {
+    margin-top: 30px;
+    line-height: 1.3;
+    color: #111;
+}
+
+section ul {
+    position: relative;
+    bottom: 10px;
+    margin-right: 50px;
+    background: #ebebeb;
+    color: #111;
+}
+
+section ul li {
+    list-style: square;
+    padding: 5px;
+    margin-right: 50px;
+    background: #ebebeb;
+}
+
+a {
+    color: #45a146;
+}
+
+code {
+    margin-right: 50px;
+    font-weight: bold;
+    display: block;
+    font-size: 12px;
+    color: black;
+    background: #45a146;
+    padding: 10px;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+    height: 85%;
+    width: 85%;
+    object-fit: cover;
+}
+
+#navbar {
+    position: fixed;
+    min-width: 510px;
+    max-width: 510px;
+    height: 100%;
+    border-right: 3px solid #45a146;
+    left: -10px;
+    text-align: center;
+}
+
+#last-link {
+    border-bottom: none;
+}
+
+#but-izq {
+    position: fixed;
+    color: #45a146;
+    top: 50%;
+    left: 500px;
+    cursor: pointer;
+}
+
+#but-der {
+    position: fixed;
+    color: #45a146;
+    top: 50%;
+    left: 500px;
+    display: none;
+    cursor: pointer;
+}
+
+#but-up {
+    position: fixed;
+    color: #45a146;
+    top: 0;
+    right: 0;
+    display: none;
+    cursor: pointer;
+}
+
+#but-down {
+    position: fixed;
+    color: #45a146;
+    top: 0;
+    right: 0;
+    display: none;
+    cursor: pointer;
+}
+
+.nav-link {
+    display: block;
+    list-style: none;
+    border-bottom: 3px solid #45a146;
+    text-decoration: none;
+    color: #ebebeb;
+    font-size: 12px;
+    margin: 10px;
+    padding: 10px;
+    margin-right: 0;
+}
+
+.nav-link:hover {
+    color: #45a146;
+}
+
+.salto {
+    height: 40%;
+    width: 40%;
+}
+
+.ataque {
+    height: 40%;
+    width: 40%;
+}
+
+.interaccion {
+    height: 40%;
+    width: 40%;
+}
+
+@media screen and (min-height: 750px) {
+
+    nav ul {
+        border-bottom: none;
+        height: 80%;
+    }
+
+    #last-link {
+        border-bottom: 3px solid #45a146;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+
+    main {
+        position: inherit;
+        display: none;
+        margin: 50px auto;
+        text-align: center;
+    }
+
+    span {
+        font-size: 10px;
+    }
+
+    h1 {
+        font-size: 15px;
+        border-bottom: 3px solid #ebebeb;
+    }
+
+    p {
+        margin: 0 auto;
+    }
+
+    section {
+        margin: 0 auto;
+    }
+
+    section ul {
+        position: inherit;
+        margin: 0 auto;
+        text-align: justify;
+    }
+
+    code {
+        text-align: justify;
+        margin: 0 auto;
+    }
+    
+    #navbar {
+        left: -7px;
+        min-width: 95%;
+        max-width: 95%;
+    }
+
+    #but-izq {
+        display: none;
+        visibility: hidden;
+    }
+
+    #but-der {
+        display: none;
+        visibility: hidden;
+    }
+
+    #but-up {
+        display: block;
+    }
+
+    #but-down {
+        display: none;
+    }
+}

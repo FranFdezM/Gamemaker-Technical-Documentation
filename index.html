@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<title>Technical Documentation: GML</title>
+</head>
+<body>
+
+	<!----Scripts--->
+	<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+	<script src="js/code.js"></script>
+
+	<!-- Nav -->
+	<nav id="navbar">
+		<header>
+			Gamemaker Studio Language (GML)
+		</header>
+		<ul>
+			<li>
+				<a class="nav-link" href="#Introducción_a_GML">Introducción a GML</a>
+			</li>
+			<li>
+				<a class="nav-link" href="#Características">Características</a>
+			</li>
+			<li>
+				<a class="nav-link" href="#Iniciación">Iniciación</a>
+			</li>
+			<li>
+				<a class="nav-link" href="#Arrastra_y_Suelta">Arrastra y Suelta</a>
+			</li>
+			<li>
+				<a class="nav-link" href="#Input">Input</a>
+			</li>
+			<li>
+				<a class="nav-link" href="#Output">Output</a>
+			</li>
+			<li>
+				<a class="nav-link" href="#Introducción_a_los_ejemplos">Introducción a los ejemplos</a>
+			</li>
+			<li>
+				<a class="nav-link" href="#Ejemplo_de_movimiento">Ejemplo de movimiento</a>
+			</li>
+			<li>
+				<a class="nav-link" href="#Ejemplo_de_salto">Ejemplo de salto</a>
+			</li>
+			<li>
+				<a class="nav-link" href="#Ejemplo_de_ataque">Ejemplo de ataque</a>
+			</li>
+			<li>
+				<a class="nav-link" href="#Ejemplo_de_interacción">Ejemplo de interacción</a>
+			</li>
+			<li>
+				<a id="last-link" class="nav-link" href="#Referencias">Referencias</a>
+			</li>
+		</ul>
+		<footer class="nav-footer">
+			<i class="fa fa-copyright"></i><span>Francisco Fernández Martín</span>
+		</footer>
+	</nav>
+
+	<!-- Botón para Nav izquierda -->
+	<i id="but-izq" class="fa fa-arrow-circle-o-left fa-4x" aria-hidden="true"></i>
+
+	<!-- Botón para Nav derecha -->
+	<i id="but-der" class="fa fa-arrow-circle-o-right fa-4x" aria-hidden="true"></i>
+
+	<!-- Botón para Nav arriba -->
+	<i id="but-up" class="fa fa-arrow-circle-o-up fa-3x" aria-hidden="true"></i>
+
+	<!-- Botón para Nav abajo -->
+	<i id="but-down" class="fa fa-arrow-circle-o-down fa-3x" aria-hidden="true"></i>
+
+	<!-- Main -->
+	<main id="main-doc">
+		<section class="main-section" id="Introducción_a_GML" href="#Introducción_a_GML">
+			<header>
+				<h1>Introducción a GML</h1>
+			</header>
+			<p>
+				Gamemaker Studio es una plataforma basada en un lenguaje de programación interpretado y un kit de desarrollo de software dedicado al desarrollo de videojuegos, este software fue creado en sus inicios por el profesor Mark Overmars en el lenguaje de programación Delphi. <br><br>
+
+				Aunque este lenguaje de programación se ha considerado orientado a usuarios novatos o con pocas nociones de programación, ha ido evolucionando desde su creación en 1999 hasta el día de hoy, resultando en conjunto en una de las mejores interfaces de desarrollo de software de videojuegos en la actualidad.
+			</p>
+		</section>
+		<section class="main-section" id="Características" href="#Características">
+			<header>
+				<h1>Características</h1>
+			</header>
+			<p>
+				Entre todas las amplias características que contiene este tipo de lenguaje de programación, se pueden destacar las siguientes:
+			</p>
+			<ul>
+				<li>
+					Está basado principalmente en un lenguaje de programación de scripts.
+				</li>
+				<li>
+					GML se influencia principalmente por el lenguaje C y Pascal para una programación más avanzada.
+				</li>
+				<li>
+					GML está principalmente enfocado al diseño de videojuegos en 2 dimensiones, aunque permite obtener resultados más complejos hasta en 3 dimensiones.
+				</li>
+				<li>
+					La sintaxis de la programación en GML es muy flexible, permitiendo aplicar ciertas reglas a posteriori.
+				</li>
+			</ul>
+		</section>
+		<section class="main-section" id="Iniciación" href="#Iniciación">
+			<header>
+				<h1>Iniciación</h1>
+			</header>
+			<p>
+				Para iniciarse de lleno a este nuevo lenguaje de programación dirigido a videojuegos, existe un manual al que podemos acudir. También ofrece la posibilidad de iniciarse a GML a través de un sistema de arrastrar y soltar (conocido como "Drag and Drop" o "DnD") en el que a través de pequeñas simbologías se escriben piezas de código que luego pueden ser legibles para su comprensión.<br><br> 
+
+				Además, podemos consultar varios tutoriales en plataformas audiovisuales como Youtube o Twitch para una explicación personal más profunda o adquirir cursos más profesionales en plataformas como Udemy.
+				<br><br>
+
+				Algunas de las reglas más importantes que se aplican a la hora de escribir código en Gamemaker Studio son:
+			</p>
+			<ul>
+				<li>
+					Posibilidad de incluir o no el punto y coma(";") al final de cada línea.
+				</li>
+				<li>
+					Delimitar bloques de código con "begin" y "end" o con llaves ("{" y "}").
+				</li>
+				<li>
+					Operador de igualdad, es indiferente si se usa un doble igual("==") para leer el valor de una variable o escribir un valor.
+				</li>
+			</ul>
+		</section>
+		<section class="main-section" id="Arrastra_y_Suelta" href="#Arrastra_y_Suelta">
+			<header>
+				<h1>Arrastra y Suelta</h1>
+			</header>
+			<p>
+				La interfaz Drag & Drop («arrastrar y soltar») consiste en que el programador arrastra «cajas» a una lista; cada una de esas "cajas" realiza una determinada acción. Las ventajas de este tipo de sistema es que se gana en facilidad de manejo, a cambio de una menor flexibilidad y potencia, permitiendo iniciarse de manera sistemática al lenguaje de programación más complejo que se abarca más adelante y desarrollar proyectos iniciales de manera más fácil.<br><br>
+
+				Puedes obtener más información acerca del funcionamiento de este sistema en este <a href="https://manual-es.yoyogames.com/#t=Drag_And_Drop%2FDrag_And_Drop_Index.htm" target="_blank">enlace</a>
+			</p>
+		</section>
+		<section class="main-section" id="Input" href="#Input">
+			<header>
+				<h1>Input</h1>
+			</header>
+			<p>
+				Al igual que en cualquier sistema programado y al jugar cualquier videojuego en este caso, requeriremos que el usuario o cliente realice determinadas acciones para interpretarlas y determinar nuestra dirección en el código programado en GML, esto se conoce como "Input".<br><br>
+
+				Por ejemplo, en un juego tipo shooter necesitaremos que el usuario pulse cierta tecla o botón para que el personaje principal realice disparos, y en función de esos disparos procederá una respuesta por parte del desarrollador que repercutirá en el videojuego, denominado "Output"(daña a un enemigo, lo elimina, dispara a un elemento del escenario,etc.).<br><br>
+
+				Otro ejemplo podría ser mantener pulsada la tecla o botón para realizar una acción constante o permitir introducir una combinación de teclas o botones para producir una decisión que repercuta en el videojuego.
+			</p>
+			<code>
+				keyboard_check_pressed(ord("Z")
+				<br><br>
+				// Pedimos al usuario que presione la tecla Z.<br><br>
+
+				keyboard_check(vk_right)
+				<br><br>
+				// Pedimos al usuario que pulse o mantenga pulsada la tecla de flecha derecha del teclado.
+			</code>
+		</section>
+		<section class="main-section" id="Output" href="#Output">
+			<header>
+				<h1>Output</h1>
+			</header>
+			<p><br><br>
+				El output consiste en el resultado que se produce o se producirá una vez se haya obtenido el input del usuario o cliente. Para producir un output se necesita un input, aunque no es estrictamente necesario que para que se produzcan todos los output tenga que haber siempre el mismo número de input.<br><br>
+
+				Por ejemplo, si un usuario pulsa la tecla de saltar en un juego de plataformas, el personaje saltará hacia la dirección que además estipule el usuario o cliente. Aunque el personaje salte, esto no quiere decir que el personaje llegue a la plataforma o sobreviva sin caer al vacío(si está programado), resultando en un conjunto de acciones que se realizan en base al salto que se ha producido en ese momento ya programadas anteriormente.
+			</p>
+			<code>
+				if keyboard_check_pressed(ord("Z") {
+					//do something
+				}
+				<br><br>
+				// En este caso, hemos pedido al usuario que presione la tecla Z de su teclado para realizar alguna acción que determinemos.<br><br>
+
+				if keyboard_check(vk_right) {
+					x += 5;
+				}
+				<br><br>
+				// En este caso, el objeto que esté controlado por el usuario se desplazará en el eje x hacia la derecha si éste pulsa o mantiene pulsada la tecla derecha en su teclado.
+			</code>
+		</section>
+		<section class="main-section" id="Introducción_a_los_ejemplos" href="#Introducción_a_los_ejemplos">
+			<header>
+				<h1>Introducción a los ejemplos</h1>
+			</header>
+			<p>
+				Para los ejemplos que voy a introducir en este proyecto, de modo que se produzca una mayor comprensión, voy a basarme en un proyecto que personalmente estoy desarrollando titulado Forgotten Souls, que consiste en un pequeño juego de plataformas 2D tipo "Boss Rush" en el que encarnizas a un caballero enmascarado con una capa que tendrá que luchar continuamente a través de portales (Es un proyecto actualmente en desarrollo y dirigido a una duración corta).<br><br>
+
+				Los ejemplos que introduciré a continuación son los más básicos y principales de sus mecánicas, aunque la idea de este proyecto es que conforme se vaya derrotando enemigos se obtenga un mayor número de habilidades y mecánicas disponibles con el objetivo de que el personaje principal evolucione de manera satisfactoria.<br><br>
+
+				Si te interesa la idea de este proyecto y te apetece aportar algún comentario al respecto, puedes escribirme a la siguiente dirección: <b>vifrancen@gmail.com</b>.
+			</p>
+		</section>
+		<section class="main-section" id="Ejemplo_de_movimiento" href="#Ejemplo_de_movimiento">
+			<header>
+				<h1>Ejemplo de movimiento</h1>
+			</header>
+			<p>
+				En Forgotten Souls, el videojuego introducido anteriormente, el movimiento se ha establecido de la siguiente manera:
+			</p>
+			<code>
+				if (keyboard_check(vk_right))
+				{
+					x += xspeed;
+					image_xscale = 1;
+					sprite_index = main_run;
+					image_speed = 1;
+				}<br>
+				else (if keyboard_check(vk_left))
+				{
+					x -= xspeed;
+					image_xscale = -1;
+					sprite_index = main_run;	
+					image_speed = 1;
+				}<br>
+				else
+				{
+					sprite_index = main_idle;
+					image_speed = 0.5;
+				}
+			</code>
+			<p>
+				<img src="https://dl.dropboxusercontent.com/s/kafcrlrt9g08hvx/Move.gif?dl=0">
+			</p>
+			<p>
+				En este ejemplo de código, podemos observar una condicional en la que se comprueba si el jugador está pulsando la tecla derecha o la tecla izquierda para avanzar en x dirección a una velocidad determinada. En el caso de que no se pulse ninguna tecla, el jugador deberá estar parado.<br><br>
+				También se puede contemplar el cambio de sprites, la dirección de la imagen y la velocidad.
+			</p>
+		</section>
+		<section class="main-section" id="Ejemplo_de_salto" href="#Ejemplo_de_salto">
+			<header>
+				<h1>
+					Ejemplo de salto
+				</h1>
+			</header>
+			<p>
+				Al tratarse de un videojuego de plataformas, en este caso es necesario que el personaje salte para alcanzar diferentes alturas, y el código que se ha utilizado es el siguiente:
+			</p>
+			<code>
+				if keyboard_check_pressed(vk_up) and !keyboard_check(vk_down)<br>
+				{
+					state = "salto";
+					audio_play_sound(a_jump,5,false);	
+				}
+			</code>
+			<p>
+			<img class="salto" src="https://dl.dropboxusercontent.com/s/wr790y08bbnmqfd/Jump.gif?dl=0">
+			</p>
+			<p>
+				En el ejemplo de salto, podemos observar una condicional en la que se comprueba si el jugador está pulsando la tecla de salto y no está pulsando la tecla abajo (en este caso sería la tecla contraria a saltar).<br><br>
+				También se puede observar que se pretende reproducir el sonido de salto cuando se produce y el personaje cambia a un estado de salto en el que se calculan las colisiones y la gravedad.
+			</p>
+		</section>
+		<section class="main-section" id="Ejemplo_de_ataque" href="#Ejemplo_de_ataque">
+			<header>
+				<h1>Ejemplo de ataque</h1>
+			</header>
+			<p>
+				El protagonista de esta historia y personaje jugable es capaz de realizar diversos ataques, en este caso, se ha establecido el ataque básico de la siguiente manera:
+			</p>
+			<code>
+				if keyboard_check(ord("Z")) and !keyboard_check(vk_down)<br>
+				{
+					state = "attack";
+					audio_play_sound(a_miss_1,20,false);
+					
+				}
+			</code>
+			<p>
+				<img class="ataque" src="https://dl.dropboxusercontent.com/s/iem1mrqn6m23idq/Attack.gif?dl=0">
+			</p>
+			<p>
+				Cuando el usuario presiona la tecla Z, el personaje ejecuta un ataque básico que puede convertirse en combo si pulsa la tecla Z simultáneamente(Analizando en el estado de ataque cuando tiene que presionar para completar el combo).<br><br>
+				Además, hay una línea de código para reproducir el audio.
+			</p>
+		</section>
+		<section class="main-section" id="Ejemplo_de_interacción" href="#Ejemplo_de_interacción">
+			<header>
+				<h1>Ejemplo de interacción</h1>
+			</header>
+			<p>
+				Con interacción me refiero a como responde el videojuego en este caso a diferentes estímulos, en el caso de esta escena, añadí un estímulo a una especie de "muñeco de pruebas" que cada vez que recibe un golpe da feedback de haber sido golpeado(Para ello, el personaje debe atacar y golpear a este "muñeco").
+			</p>
+			<code>
+				case "knockback":<br>
+				Knockback(spr_puppet_hit,"chase");<br>
+				break;
+			</code>
+			<p>
+				<img class="interaccion" src="https://dl.dropboxusercontent.com/s/54pu3zjneucmjnp/Interaction.gif?dl=0">
+			</p>
+			<p>
+				Se ha establecido para la doble marioneta de esta sala un estado de knockback mediante el cual cuando recibe un golpe se transforma durante unos segundos dando feedback de haber sido golpeado. En este caso, tendría un caso "idle" y si es golpeado retornará al caso "knockback" durante unos segundos. "Knockback" como tal supondría un script en el que se analizan las variables a resolver para que el estado suceda.<br><br>
+				Observamos una transformación mediante la transformación del propio sprite y un "chase" que supondría una respuesta por parte del enemigo si pudiera responder. La secuencia "break" sirve para romper las líneas siguientes en el caso de que se cumpla la condición.
+			</p>
+		</section>
+		<section class="main-section" id="Referencias" href="#Referencias">
+			<header>
+				<h1>Referencias</h1>
+			</header>
+			<p>
+				Este proyecto ha sido realizado con fines de demostración y con los requisitos requeridos para aprobar el test de FreeCodeCamp perteneciente a este tipo de proyectos. Las referencias que se han usado para este proyecto son en gran parte propias y en otra parte de los siguientes enlaces:
+			</p>
+			<ul>
+				<li>
+					<a href="https://es.wikipedia.org/wiki/GameMaker_Studio" target="_blank">Wikipedia de Gamemaker Studio</a>
+				</li>
+				<li>
+					<a href="https://www.yoyogames.com/es" target="_blank">Página de YoYoGames</a>
+				</li>
+				<li>
+					<a href="https://manual-es.yoyogames.com/" target="_blank">Manual de Gamemaker Studio</a>
+				</li>
+			</ul>
+		</section>
+	</main>
+</body>
+</html>
